@@ -353,21 +353,13 @@ extern "C" void* ThreadStats(void*) {
   } while(1);
 }
 
-<<<<<<< HEAD
 static const string mainnet_seeds[] = {"dns.sicanet.net", "84.250.16.111", "45.63.51.45", ""};
-=======
-static const string mainnet_seeds[] = {"dnseed.sicanet.net", ""};
->>>>>>> 301ee5b1ac7ffd053b2df2bb9fcd0756ec83523c
 static const string testnet_seeds[] = {""};
 static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
-<<<<<<< HEAD
     db.Add(CService("kjy2eqzk4zwi5zd3.onion", 8639), true);
-=======
-    db.Add(CService("212.125.247.50", 8639), true);
->>>>>>> 301ee5b1ac7ffd053b2df2bb9fcd0756ec83523c
   }
   do {
     for (int i=0; seeds[i] != ""; i++) {
